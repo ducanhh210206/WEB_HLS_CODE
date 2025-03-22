@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+        .nav-bar {
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+        }
+        .nav-bar a {
+            margin-right: 5px;
+            text-decoration: none;
+            color: #003366;
+        }
+        .container {
+            display: flex;
+            margin: 10px;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .content {
+            width: 75%;
+            padding: 10px;
+        }
+        .article-title {
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+            font-weight: bold;
+        }
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .article-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .article-card img {
+            width: 100%;
+            height: auto;
+        }
+        .read-more {
+            border-radius: 10px;
+            border: 2px, solid, black;
+            background-color: #003366;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        .footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            font-size: 0.8em;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://www.dignexus.com/assets/images/news-portal-banner.png" alt="NEWS PORTAL">
+    </div>
+    
+    <div class="nav-bar">
+        <a href="#">Trang chủ</a> | <a href="#">Tin tức</a> | <a href="#">Giới thiệu</a> | <a href="#">Liên hệ</a>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <h3>Danh mục</h3>
+            <ul>
+                <li><a href="#">Công nghệ</a></li>
+                <li><a href="#">Giáo dục</a></li>
+                <li><a href="#">Thời sự</a></li>
+                <li><a href="#">Đời sống</a></li>
+            </ul>
+            
+            <h3>Tin mới nhất</h3>
+            <ul>
+                <li><a href="#">Tin tức mới về công nghệ</a></li>
+                <li><a href="#">Các sự kiện hot trong tuần</a></li>
+                <li><a href="#">Thông tin giáo dục mới nhất</a></li>
+                <li><a href="#">Tin tức thể thao cập nhật</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <div class="article-title">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" width="20px">Bài viết nổi bật
+            </div>
+            
+            <div class="article-grid">
+                <div class="article-card">
+                    <img src="https://image.tinnhanhchungkhoan.vn/300x200/Uploaded/2025/wpxlcdjwi/2025_03_06/thumbnail-2-13-6806.png
+                    " alt="Article 1">
+                    <h3>VPS Inventory - Chuyên đầu tư</h3>
+                    <p>Giới thiệu về dịch vụ đầu tư và các công đồng đầu tư. Hỗ trợ và tư vấn cho những người mới bắt đầu...</p>
+                    <a href="#" class="read-more">Xem chi tiết</a>
+                </div>
+                
+                <div class="article-card">
+                    <img src="https://tse-tesol.edu.vn/wp-content/uploads/2024/11/word-image-31706-1-300x200.png
+                    " alt="Article 2">
+                    <h3>Các cấp độ tiếng Anh cho trẻ em</h3>
+                    <p>Hệ thống các cấp độ tiếng Anh cho trẻ em từ cơ bản đến nâng cao. Phương pháp học tập hiệu quả...</p>
+                    <a href="#" class="read-more">Xem chi tiết</a>
+                </div>
+                
+                <div class="article-card">
+                    <img src="https://www.align.vn/storage/2024/09/Google-Business-Thumbnail-300x200.png
+                    " alt="Article 3">
+                    <h3>Hướng dẫn đăng ký Google Business Profile</h3>
+                    <p>Cách tạo và xây dựng hồ sơ doanh nghiệp trên Google. Tối ưu hóa hiển thị trên bản đồ và tìm kiếm...</p>
+                    <a href="#" class="read-more">Xem chi tiết</a>
+                </div>
+                
+                <div class="article-card">
+                    <img src="https://nanotravel.vn/wp-content/uploads/2024/03/image-1-300x200.png" alt="Article 4">
+                    <h3>Bá Nà Hills - điểm đến hàng đầu tại Đà Nẵng</h3>
+                    <p>Khám phá Bá Nà Hills với nhiều hoạt động thú vị. Những điểm check-in không thể bỏ qua khi đến đây...</p>
+                    <a href="#" class="read-more">Xem chi tiết</a>
+                </div>
+            </div>
+            
+            <div class="article-title" style="margin-top: 20px;">
+                Các bài viết khác
+            </div>
+            
+            <ul>
+                <li><a href="#">iPhone trình làng phiên bản mới nhất</a></li>
+                <li><a href="#">Tình hình an toàn Internet trong khu vực</a></li>
+                <li><a href="#">Chính sách hỗ trợ mới cho doanh nghiệp</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer">
+        Bản quyền © 2025 - YourCompany | Liên hệ: info@example.com | 
+        Theo dõi chúng tôi: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    </div>
+</body>
+</html>

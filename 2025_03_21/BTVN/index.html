@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <dev class="container">
+    <h2>PT Ứng dụng Web - THIẾT KẾ FORM ĐƠN GIẢN</h2>
+    <table cellspacing="25px">
+        <tr>
+            <td style="float: left">Họ và tên</td>
+            <td>
+                <form action="" method="GET">
+                    <input type="text" name="ho_ten" size="30" maxlength="30" /> 
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td style="float: left">Email</td>
+            <td>
+                <form action="" method='GET'>
+                    <input type="text" name="email" size="30" maxlength="30" />
+            </td>
+        </tr>
+        <tr>
+            <td style="float: left">Số điện thoại</td>
+            <td>
+                <form action="" method="GET">
+                    <input type="tel" name="số điện thoại" size="30" maxlength="30" />
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td style="float: left">Quê quán</td>
+            <td>
+                <select name="thanh_pho">
+                    <option value="chonthanhpho">--Chọn thành phố---</option>
+                    <option value="hanoi">Hà Nội</option>
+                    <option value="hochiminh">TP Hồ Chí Minh</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="float: left">Giới tính</td>
+            <td>
+                <form action="" method="GET">
+                    <input type="radio" name="ket_qua" value="nam"/> Nam
+                    <input type="radio" name="ket_qua" value="nu" /> Nữ           
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td style="float: left">Kỹ năng</td>
+            <td>
+                <input type="checkbox" name='kỹ năng' value="HTML"/> HTML
+                <input type="checkbox" name='kỹ năng' value="HTML"/> CSS
+                <input type="checkbox" name='kỹ năng' value="HTML"/> JS
+                <input type="checkbox" name='kỹ năng' value="HTML"/> BOOTSTRAP
+            </td>
+        </tr>
+        <tr>
+            <td style="float: left">Ngày sinh</td>
+            <td >
+                <input type="date" name="date_of_birth" id="date_of_birth"/> <br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Giới thiệu bản thân</td>
+            <td>
+                <form action="" method="GET">  
+                    <textarea name="gioi_thieu" cols="30" rows="6" placeholder="Bạn hãy giới thiệu qua về bản thân mình"></textarea> 
+                </form>  
+            </td>
+        </tr>
+    </table>
+    <div id="btn">
+        <button type="Submit">Submit</button>
+        <button type="Reset">Reset</button>
+    </div>
+</body>
+</html>
