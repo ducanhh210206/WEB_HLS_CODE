@@ -1,0 +1,23 @@
+#p_tag{
+    color: red;
+}
+#left{
+    text-align: left;
+}
+#right{
+    text-align: right;
+}
+#center{
+    text-align: center;
+}
+#justify{
+    text-align: justify;
+}
+#text-indent{
+    text-indent: 100px;
+}
+#text-decoration{
+    text-decoration: underline;
+    text-decoration-color:red;
+    text-decoration-style: wavy;
+}
