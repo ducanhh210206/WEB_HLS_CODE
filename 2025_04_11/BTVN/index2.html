@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu hỗ trợ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .menu-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: #f8f8f8;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .menu-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .menu-item img {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 5px;
+    }
+
+    .menu-item a {
+      color: #000;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .menu-item a:hover {
+      color: #00a0e9; /* Màu xanh khi di chuột vào */
+    }
+
+    /* Góc phải trạng thái sales */
+    .sales-status {
+      margin-left: auto;
+      text-align: left;
+    }
+
+    .sales-status div {
+      margin-bottom: 5px;
+    }
+
+    .sales-status img {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+<div class="menu-container">
+  <div class="menu-item">
+    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="icon">
+    <a href="#">Quy định sử dụng</a>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="icon">
+    <a href="#">Hướng dẫn thanh toán</a>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="icon">
+    <a href="#">Download bảng giá</a>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="icon">
+    <a href="#">Liên hệ kinh doanh</a>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="icon">
+    <a href="#">Hỗ trợ kỹ thuật</a>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="icon">
+    <a href="#" style="color: #00a0e9;">Góp ý công ty</a>
+  </div>
+
+  <div class="sales-status">
+    <div>
+      Sales 1: <img src="https://www.iconarchive.com/download/i103409/graphicloads/flat-finance/person.ico" width="16"> <span style="color:blue;">I'm Online</span>
+    </div>
+    <div>
+      Sales 2: <img src="https://www.iconarchive.com/download/i103409/graphicloads/flat-finance/person.ico" width="16"> <span style="color:gray;">Not Online</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
