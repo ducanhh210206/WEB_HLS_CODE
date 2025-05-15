@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quán Cà Phê Sang Trọng</title>
+  <style>
+    :root {
+      --primary: #8b4513;
+      --accent: #d2691e;
+      --light: #fff8f0;
+      --dark: #2e2e2e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--light);
+      color: #3b2f2f;
+    }
+
+    header {
+      background-color: var(--dark);
+      padding: 20px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 17px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://storage.googleapis.com/a1aa/image/f305716b-2db9-4b94-e1a2-389ef54910ca.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-shadow: 3px 3px 5px #000;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .hero button {
+      padding: 14px 32px;
+      background-color: var(--accent);
+      border: none;
+      font-size: 18px;
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #aa4c0b;
+    }
+
+    .features {
+      display: flex;
+      gap: 30px;
+      padding: 60px;
+      justify-content: center;
+      background-color: #fff3e0;
+      flex-wrap: wrap;
+    }
+
+    .feature-card {
+      flex: 1;
+      min-width: 280px;
+      max-width: 360px;
+      background-color: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .feature-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .feature-card button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .menu-section {
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .menu-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: var(--primary);
+    }
+
+    .menu-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .menu-row {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .menu-item {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      width: 250px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .menu-item p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .price {
+      font-weight: bold;
+      color: var(--accent);
+      margin-top: 12px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>☕ Quán Cà Phê</strong></div>
+    <nav>
+      <a href="#">Trang chủ</a>
+      <a href="#">Giới thiệu</a>
+      <a href="#">Sản phẩm</a>
+      <a href="#">Tin tức</a>
+      <a href="#">Liên hệ</a>
+    </nav>
+  </header>
+
+  <section class="hero"> 
+    <h1>COFFEE ĐẶC BIỆT PHA CHẾ</h1>
+    <p>Phong cách độc nhất kể từ những năm 80</p>
+    <button>ĐẶT BÀN</button>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <img src="https://storage.googleapis.com/a1aa/image/d50f1df9-aff6-4c1d-3325-87943232bbf7.jpg" alt="Cà phê mới">
+      <h3>Coffee hương vị mới</h3>
+      <button>Tìm hiểu</button>
+    </div>
+    <div class="feature-card">
+      <img src="https://storage.googleapis.com/a1aa/image/dfee6700-8d35-46d4-20db-8c99e4146788.jpg" alt="Ưu đãi">
+      <h3>Thứ 6 này 25% ưu đãi</h3>
+      <button>Tìm hiểu</button>
+    </div>
+    <div class="feature-card">
+      <img src="https://storage.googleapis.com/a1aa/image/b64061ee-ee29-4582-0aec-16b887b1f85c.jpg" alt="Món mới">
+      <h3>Tuyệt vời món mới</h3>
+      <button>Tìm hiểu</button>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Khám phá menu</h2>
+    <div class="menu-grid">
+      <div class="menu-row">
+        <div class="menu-item">
+          <img src="https://i.imgur.com/NchRZsS.png" alt="Cafe Ice Latte">
+          <h3>Cafe Ice Latte</h3>
+          <p>Cà phê đậm phong cách Ý với lớp kem sữa mịn.</p>
+          <div class="price">60.000₫</div>
+        </div>
+        <div class="menu-item">
+          <img src="https://i.imgur.com/YnddZtF.png" alt="Americano">
+          <h3>Americano</h3>
+          <p>Cà phê Espresso pha loãng, hương vị đậm đà.</p>
+          <div class="price">35.000₫</div>
+        </div>
+        <div class="menu-item">
+          <h3>Capuchino</h3>
+          <p>Espresso với sữa nóng và lớp bọt sữa mịn.</p>
+          <div class="price">45.000₫</div>
+        </div>
+      </div>
+      <div class="menu-row">
+        <div class="menu-item">
+          <h3>Espresso</h3>
+          <p>Hương vị mạnh, đậm đà, truyền thống Ý.</p>
+          <div class="price">30.000₫</div>
+        </div>
+        <div class="menu-item">
+          <h3>Mocha</h3>
+          <p>Cà phê kết hợp socola, ngọt và thơm.</p>
+          <div class="price">50.000₫</div>
+        </div>
+        <div class="menu-item">
+          <h3>Latte</h3>
+          <p>Cà phê sữa dịu nhẹ với bọt sữa êm ái.</p>
+          <div class="price">49.000₫</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
