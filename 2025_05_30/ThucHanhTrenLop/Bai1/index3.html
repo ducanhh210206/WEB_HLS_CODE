@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            name;
+            age;
+            salary;
+            hello(){
+                document.write("Hello "+ this.name);
+            }
+
+            changeSalary(newSalary){
+                this.salary = newSalary;
+            }
+
+        }
+
+        a = new Person();
+        a.name = "Nguyễn Đức Anh";
+        a.hello();
+        a.salary = 1;
+        document.write('<br>'+a.name + ': ' + a.salary);
+        a.changeSalary(12);
+        document.write('<br>'+a.name + ': ' + a.salary);
+
+    </script>
+</body>
+</html>
