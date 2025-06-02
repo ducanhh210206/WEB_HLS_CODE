@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-title">📝 Danh sách công việc hôm nay</h1>
+        
+        <div class="todo-container">
+            <h2>Buổi sáng</h2>
+            <ul class="todo-list morning">
+                <li><input type="checkbox"><span>Chạy bộ 5km</span></li>
+                <li class="important"><input type="checkbox"><span>Vệ sinh cá nhân</span></li>
+                <li><input type="checkbox"><span>Ăn sáng</span></li>
+                <li><input type="checkbox"><span>Đọc sách 30 phút</span></li>
+                <li><input type="checkbox"><span>Chuẩn bị tài liệu cho cuộc họp</span></li>
+            </ul>
+            
+            <h2>Buổi chiều</h2>
+            <ul class="todo-list afternoon">
+                <li><input type="checkbox"><span>Đi thực hành lập trình Script</span></li>
+                <li class="important"><input type="checkbox"><span>Ăn trưa</span></li>
+                <li><input type="checkbox"><span>Họp nhóm dự án</span></li>
+                <li><input type="checkbox"><span>Giải quyết email công việc</span></li>
+                <li><input type="checkbox"><span>Tập thể dục 15 phút</span></li>
+            </ul>
+            
+            <h2>Buổi tối</h2>
+            <ul class="todo-list evening">
+                <li class="important"><input type="checkbox"><span>Học môn lập trình Script</span></li>
+                <li><input type="checkbox"><span>Nộp bài lên git trước khi ngủ</span></li>
+                <li><input type="checkbox"><span>Chuẩn bị đồ đi học ngày mai</span></li>
+                <li><input type="checkbox"><span>Nhắn tin cho bạn gái</span></li>
+                <li><input type="checkbox"><span>Thiền 10 phút trước khi ngủ</span></li>
+            </ul>
+        </div>
+        
+        <p class="note" data-type="reminder">* Ghi nhớ: Kỷ luật là sức mạnh!</p>
+    </div>
+</body>
+</html>
