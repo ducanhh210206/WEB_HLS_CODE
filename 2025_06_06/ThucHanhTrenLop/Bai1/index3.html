@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>UDU</title>
+</head>
+<body>
+    <div>Click vào button để xem kết quả</div>
+    <button type="button" onclick="openW()">Mở cửa sổ PTIT</button>
+    <button type="button" onclick="moveW()">Di chuyển</button>
+
+    <script type="text/javascript">
+    function openW() {
+        ptit = window.open('', '', 'width=300,height=200');
+    }
+
+    function moveW() {
+            ptit.moveTo(100,200);
+            ptit.focus();
+}
+    </script>
+</body>
+
+</html>

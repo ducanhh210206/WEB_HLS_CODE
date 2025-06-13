@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<p id="demo"></p>
+
+	<script>
+		var width = window.innerWidth
+		|| document.documentElement.clientWidth
+		|| document.body.clientWidth;
+
+		var height = window.innerHeight
+		|| document.documentElement.clientHeight
+		|| document.body.clientHeight;
+
+		var x = document.getElementById("demo");
+		x.innerHTML = "Chiều cao rộng trình duyệt: " + width + ", Chiều cao của trình duyệt: " + height + ".";
+	</script>
+
+</body>
+</html>

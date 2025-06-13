@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>UDU</title>
+</head>
+<body>
+    <div>Click vào button để xem kết quả</div>
+    <button type="button" onclick="openW1()">Mở cửa sổ PTIT</button>
+    <button type="button" onclick="openW2()">Mở cửa sổ DANTRI</button>
+    <button type="button" onclick="closeW1()">Đóng cửa sổ PTIT</button>
+    <button type="button" onclick="closeW2()">Đóng cửa sổ DANTRI</button>
+    <script type="text/javascript">
+    function openW1() {
+        ptit = window.open('https://portal.ptit.edu.vn/', 'ptit', 'width=500,height=600,left=100px,top=20px',false);
+        return false;
+    }
+
+    function openW2() {
+        dantri = window.open('https://dantri.com.vn/', 'dantri', 'width=500,height=600,left=100px,top=20px',false);
+        return false;
+    }
+
+    function closeW2() {
+        dantri.close();
+	}
+
+    function closeW1() {
+        ptit.close();
+	}
+    </script>
+</body>
+
+</html>
